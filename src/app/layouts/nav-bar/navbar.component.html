@@ -1,0 +1,24 @@
+<mat-toolbar class="maiora-nav-bar" ngStyle.lt-sm="height:51px;box-shadow: 0 9px 14px 0 rgba(5,42,118,.09);">
+    <div class="logo-wrapper" routerLink="/">
+        <img class="logo" ngStyle.lt-sm="padding-left: 6px;width: 100px;"
+            src="http://www.maiora.co/images/Maiora-logo.png" alt="EVM Wheels Logo">
+    </div>
+    <div style="cursor:pointer;color: #000;line-height: 2;display: contents;font-size: 15px">
+        <button mat-button [matMenuTriggerFor]="home">Home</button>
+    </div>
+    <div style="cursor:pointer;color: #000;line-height: 2;display: contents;font-size: 15px">
+        <button mat-button [matMenuTriggerFor]="brands">Brands</button>
+    </div>
+    <mat-menu #home="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    <mat-menu #brands="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    <div style="flex: 1 1 auto;" class="spacer"></div>
+    <div style="cursor:pointer;color: #000;line-height: 2;display: contents;font-size: 15px">
+        <button mat-button>Logout</button>
+    </div>
+</mat-toolbar>

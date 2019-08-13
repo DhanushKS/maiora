@@ -1,0 +1,14 @@
+html,
+body {
+    height: 100%
+}
+
+.root-container {
+    width: 100%;
+    position: relative;
+    /* needed for footer positioning*/
+    height: auto !important;
+    /* real browsers */
+    min-height: 100%;
+    overflow-x: hidden;
+}
